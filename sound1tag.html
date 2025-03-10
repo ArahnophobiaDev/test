@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотография и музыка</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Замените ссылку на фотографию и музыку на свои -->
+    <img src="https://raw.githubusercontent.com/ваш-username/ваш-репозиторий/путь/к/фотографии.jpg" alt="Фотография" onclick="playMusic()">
+
+    <audio id="music" src="https://raw.githubusercontent.com/ваш-username/ваш-репозиторий/путь/к/музыке.mp3"></audio>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("music");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+
+</body>
+</html>
